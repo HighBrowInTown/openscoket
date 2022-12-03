@@ -19,7 +19,7 @@ OPEN_PORT () {
 
     while true 
     do 
-        socat tcp4-listen:"${PORT}",reuseaddr tcp:"${DST_IP}:${PORT}"
+        socat tcp4-listen:"${PORT}",reuseaddr tcp:"${DST_IP}:${PORT}" > /dev/null & disown
     done
 
 }
@@ -36,7 +36,7 @@ MAIN () {
 
     VARIABLE_CHK
     INFO
-    nohup OPEN_PORT
+    OPEN_PORT
 }
 
 MAIN
