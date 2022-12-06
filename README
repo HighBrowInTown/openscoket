@@ -1,0 +1,4 @@
+Open Socket For Port Forwarding Using Shell Script
+
+Using socat we are opening up new sockets which can be used for port forwarding and similar use cases.
+Simple bash script which will keep running in the background and keep the socket open. 
