@@ -27,7 +27,7 @@ OPEN_PORT () {
 INFO () {
 
     echo "ALL traffic received on port ${PORT} will be forwarded to ${DST_IP}:${PORT}"
-    echo $$ > /run/openSocket.pid
+    
 }
 
 
